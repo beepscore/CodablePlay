@@ -36,11 +36,12 @@ class TodoManagerOldTests: XCTestCase {
                 return
             }
             // success :)
-            XCTAssertNotNil(todo, "No todo was downloaded.")
-
             debugPrint(todo)
+            XCTAssertNotNil(todo, "No todo was downloaded.")
             XCTAssertEqual(todo.title, "laboriosam mollitia et enim quasi adipisci quia provident illum")
             XCTAssertEqual(todo.id!, 5)
+            XCTAssertEqual(todo.userId, 1)
+            XCTAssertEqual(todo.completed, 0)
 
             expectation.fulfill()
         }
