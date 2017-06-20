@@ -16,6 +16,7 @@ class TodoManagerOld {
     }
 
     static func todoByID(_ id: Int, completionHandler: @escaping (TodoOld?, Error?) -> Void) {
+
         // set up URLRequest with URL
         let endpoint = TodoManagerOld.endpointForID(id)
         guard let url = URL(string: endpoint) else {
@@ -28,7 +29,9 @@ class TodoManagerOld {
 
         // Make request
         let session = URLSession.shared
-        let task = session.dataTask(with: urlRequest, completionHandler: {
+
+        /// https://developer.apple.com/documentation/foundation/urlsession/1410330-datatask
+        let taskCompletionHandler: (Data?, URLResponse?, Error?) -> Void = {
             (data, response, error) in
             // handle response to request
             // check for error
@@ -61,7 +64,9 @@ class TodoManagerOld {
                 completionHandler(nil, error)
                 return
             }
-        })
+        }
+
+        let task = session.dataTask(with: urlRequest, completionHandler: taskCompletionHandler)
         task.resume()
     }
 
