@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2788DA1EF8D87B00D8B21A /* TodoManagerOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2788D91EF8D87B00D8B21A /* TodoManagerOld.swift */; };
+		DE2788DC1EF8DA2B00D8B21A /* BackendError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2788DB1EF8DA2B00D8B21A /* BackendError.swift */; };
+		DE2788DE1EF8DC6700D8B21A /* TodoManagerOldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2788DD1EF8DC6700D8B21A /* TodoManagerOldTests.swift */; };
 		DE2D7FC31EF8B2B000A94B77 /* CodablePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2D7FB91EF8B2B000A94B77 /* CodablePlay.framework */; };
 		DE2D7FCA1EF8B2B000A94B77 /* CodablePlay.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2D7FBC1EF8B2B000A94B77 /* CodablePlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE2D7FD41EF8B71D00A94B77 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D7FD31EF8B71D00A94B77 /* Todo.swift */; };
 		DE7FA0F11EF8C54200F68D27 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA0F01EF8C54200F68D27 /* TodoTests.swift */; };
+		DEEF29951EF8CB8100F3D16A /* TodoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF29941EF8CB8100F3D16A /* TodoManager.swift */; };
+		DEEF29971EF8CBE500F3D16A /* TodoManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF29961EF8CBE500F3D16A /* TodoManagerTests.swift */; };
+		DEEF29991EF8D65800F3D16A /* TodoOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF29981EF8D65800F3D16A /* TodoOld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2788D91EF8D87B00D8B21A /* TodoManagerOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManagerOld.swift; sourceTree = "<group>"; };
+		DE2788DB1EF8DA2B00D8B21A /* BackendError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendError.swift; sourceTree = "<group>"; };
+		DE2788DD1EF8DC6700D8B21A /* TodoManagerOldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManagerOldTests.swift; sourceTree = "<group>"; };
 		DE2D7FB91EF8B2B000A94B77 /* CodablePlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodablePlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2D7FBC1EF8B2B000A94B77 /* CodablePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodablePlay.h; sourceTree = "<group>"; };
 		DE2D7FBD1EF8B2B000A94B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +41,9 @@
 		DE2D7FD31EF8B71D00A94B77 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		DE7FA0EF1EF8BD5900F68D27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE7FA0F01EF8C54200F68D27 /* TodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTests.swift; sourceTree = "<group>"; };
+		DEEF29941EF8CB8100F3D16A /* TodoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManager.swift; sourceTree = "<group>"; };
+		DEEF29961EF8CBE500F3D16A /* TodoManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoManagerTests.swift; sourceTree = "<group>"; };
+		DEEF29981EF8D65800F3D16A /* TodoOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoOld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +87,13 @@
 		DE2D7FBB1EF8B2B000A94B77 /* CodablePlay */ = {
 			isa = PBXGroup;
 			children = (
+				DE2788DB1EF8DA2B00D8B21A /* BackendError.swift */,
 				DE2D7FBC1EF8B2B000A94B77 /* CodablePlay.h */,
 				DE2D7FBD1EF8B2B000A94B77 /* Info.plist */,
 				DE2D7FD31EF8B71D00A94B77 /* Todo.swift */,
+				DEEF29941EF8CB8100F3D16A /* TodoManager.swift */,
+				DE2788D91EF8D87B00D8B21A /* TodoManagerOld.swift */,
+				DEEF29981EF8D65800F3D16A /* TodoOld.swift */,
 			);
 			path = CodablePlay;
 			sourceTree = "<group>";
@@ -86,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				DE2D7FC91EF8B2B000A94B77 /* Info.plist */,
+				DE2788DD1EF8DC6700D8B21A /* TodoManagerOldTests.swift */,
+				DEEF29961EF8CBE500F3D16A /* TodoManagerTests.swift */,
 				DE7FA0F01EF8C54200F68D27 /* TodoTests.swift */,
 			);
 			path = CodablePlayTests;
@@ -206,6 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2D7FD41EF8B71D00A94B77 /* Todo.swift in Sources */,
+				DEEF29951EF8CB8100F3D16A /* TodoManager.swift in Sources */,
+				DE2788DC1EF8DA2B00D8B21A /* BackendError.swift in Sources */,
+				DEEF29991EF8D65800F3D16A /* TodoOld.swift in Sources */,
+				DE2788DA1EF8D87B00D8B21A /* TodoManagerOld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7FA0F11EF8C54200F68D27 /* TodoTests.swift in Sources */,
+				DEEF29971EF8CBE500F3D16A /* TodoManagerTests.swift in Sources */,
+				DE2788DE1EF8DC6700D8B21A /* TodoManagerOldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
