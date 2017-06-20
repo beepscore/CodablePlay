@@ -31,6 +31,7 @@
 		DE2D7FC71EF8B2B000A94B77 /* CodablePlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePlayTests.swift; sourceTree = "<group>"; };
 		DE2D7FC91EF8B2B000A94B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2D7FD31EF8B71D00A94B77 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		DE7FA0EF1EF8BD5900F68D27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		DE2D7FAF1EF8B2B000A94B77 = {
 			isa = PBXGroup;
 			children = (
+				DE7FA0EF1EF8BD5900F68D27 /* README.md */,
 				DE2D7FBB1EF8B2B000A94B77 /* CodablePlay */,
 				DE2D7FC61EF8B2B000A94B77 /* CodablePlayTests */,
 				DE2D7FBA1EF8B2B000A94B77 /* Products */,
