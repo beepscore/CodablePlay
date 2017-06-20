@@ -24,7 +24,7 @@ class TodoManagerOldTests: XCTestCase {
 
         let expectation = XCTestExpectation(description: "download todo")
 
-        let completionHandler = { (todo: TodoOld?, error: Error?) -> Void in
+        let completionHandler: (TodoOld?, Error?) -> Void = { (todo, error) in
             if let error = error {
                 // got an error in getting the data, need to handle it
                 print(error)
