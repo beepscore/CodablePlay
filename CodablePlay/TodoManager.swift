@@ -31,7 +31,9 @@ class TodoManager {
 
         // Make request
         let session = URLSession.shared
-        let task = session.dataTask(with: urlRequest, completionHandler: {
+
+        /// https://developer.apple.com/documentation/foundation/urlsession/1410330-datatask
+        let taskCompletionHandler: (Data?, URLResponse?, Error?) -> Void = {
             (data, response, error) in
             // handle response to request
             // check for error
@@ -58,7 +60,9 @@ class TodoManager {
                 print(error)
                 completionHandler(nil, error)
             }
-        })
+        }
+
+        let task = session.dataTask(with: urlRequest, completionHandler: taskCompletionHandler)
         task.resume()
     }
 
