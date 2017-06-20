@@ -13,7 +13,11 @@ class TodoManager {
     static func endpointForID(_ id: Int) -> String {
         return "https://jsonplaceholder.typicode.com/todos/\(id)"
     }
-    
+
+    static func endpointForTodos() -> String {
+        return "https://jsonplaceholder.typicode.com/todos/"
+    }
+
     static func todoByID(_ id: Int, completionHandler: @escaping (Todo?, Error?) -> Void) {
         // set up URLRequest with URL
         let endpoint = TodoManagerOld.endpointForID(id)
@@ -73,6 +77,43 @@ class TodoManager {
             debugPrint(todo)
             print(todo.title)
         })
+    }
+
+    static func allTodos(completionHandler: @escaping ([Todo]?, Error?) -> Void) {
+        let endpoint = TodoManager.endpointForTodos()
+        guard let url = URL(string: endpoint) else {
+            print("Error: cannot create URL")
+            let error = BackendError.urlError(reason: "Could not construct URL")
+            completionHandler(nil, error)
+            return
+        }
+        let urlRequest = URLRequest(url: url)
+
+        let session = URLSession.shared
+
+        let task = session.dataTask(with: urlRequest) {
+            (data, response, error) in
+            guard let responseData = data else {
+                print("Error: did not receive data")
+                completionHandler(nil, error)
+                return
+            }
+            guard error == nil else {
+                completionHandler(nil, error)
+                return
+            }
+
+            let decoder = JSONDecoder()
+            do {
+                let todos = try decoder.decode([Todo].self, from: responseData)
+                completionHandler(todos, nil)
+            } catch {
+                print("error trying to convert data to JSON")
+                print(error)
+                completionHandler(nil, error)
+            }
+        }
+        task.resume()
     }
 
 }
