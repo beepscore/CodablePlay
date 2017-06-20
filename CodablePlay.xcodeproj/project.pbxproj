@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE2D7FC31EF8B2B000A94B77 /* CodablePlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE2D7FB91EF8B2B000A94B77 /* CodablePlay.framework */; };
-		DE2D7FC81EF8B2B000A94B77 /* CodablePlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D7FC71EF8B2B000A94B77 /* CodablePlayTests.swift */; };
 		DE2D7FCA1EF8B2B000A94B77 /* CodablePlay.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2D7FBC1EF8B2B000A94B77 /* CodablePlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE2D7FD41EF8B71D00A94B77 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D7FD31EF8B71D00A94B77 /* Todo.swift */; };
 		DE7FA0F11EF8C54200F68D27 /* TodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA0F01EF8C54200F68D27 /* TodoTests.swift */; };
@@ -29,7 +28,6 @@
 		DE2D7FBC1EF8B2B000A94B77 /* CodablePlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodablePlay.h; sourceTree = "<group>"; };
 		DE2D7FBD1EF8B2B000A94B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2D7FC21EF8B2B000A94B77 /* CodablePlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodablePlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE2D7FC71EF8B2B000A94B77 /* CodablePlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePlayTests.swift; sourceTree = "<group>"; };
 		DE2D7FC91EF8B2B000A94B77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2D7FD31EF8B71D00A94B77 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		DE7FA0EF1EF8BD5900F68D27 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		DE2D7FC61EF8B2B000A94B77 /* CodablePlayTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE2D7FC71EF8B2B000A94B77 /* CodablePlayTests.swift */,
 				DE2D7FC91EF8B2B000A94B77 /* Info.plist */,
 				DE7FA0F01EF8C54200F68D27 /* TodoTests.swift */,
 			);
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2D7FC81EF8B2B000A94B77 /* CodablePlayTests.swift in Sources */,
 				DE7FA0F11EF8C54200F68D27 /* TodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
