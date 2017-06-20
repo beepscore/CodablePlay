@@ -31,8 +31,8 @@ class TodoManagerOldTests: XCTestCase {
                 return
             }
             guard let todo = todo else {
-                print("error getting first todo: result is nil")
-                XCTFail()
+                let failMessage = "error getting first todo: result is nil"
+                XCTFail(failMessage)
                 return
             }
             // success :)
